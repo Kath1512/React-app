@@ -1,0 +1,7 @@
+#loading {
+    background-image: url('./vector-loading-icon-vector-editable-element-design_898898-180.jpg');
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}

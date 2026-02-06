@@ -1,0 +1,109 @@
+#root{
+    font-size: 16px;
+    width: 100%;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.mainboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rows{
+    display: flex;
+}
+
+.tiles{
+    font-size: 2rem;
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid hsl(0, 0%, 30%);
+    color: hsl(0, 0%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tiles:hover{
+    cursor: pointer;
+}
+button{
+    font-size: 1.25rem;
+    padding: 0.5em 1.5em;
+    border-radius: 0.75rem;
+    background-color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 100%)
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+.display-score{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.tools{
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+input{
+    font-size: 1.25rem;
+    margin: 0.5em;
+    width: fit-content;
+    background-color: hsl(0, 0%, 100%);
+}
+input:read-only{
+    background-color: hsl(0, 0%, 70%);
+}
+
+#victory{
+    position: relative;
+}
+
+#victory::after{
+    content: 'Match Over! Player 1\'s Victory';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;   
+    background-image: linear-gradient(to right,red, orange, green, cyan, blue, pink, purple);
+    background-clip: text;
+    color: transparent;
+    z-index: 10;
+    filter: blur(2px);
+    text-transform: none;
+}
